@@ -42,13 +42,16 @@ prototype_portofolio2/
   - `fs-xl`: Mengatur ukuran teks memakai skala ukuran Bootstrap 6.
   - `text-accent`: Class kustom untuk warna biru muda.
 - `<button class="navbar-toggler" data-bs-toggle="drawer" data-bs-target="#navbarNav">`:
-  - Membuka drawer navigasi pada layar kecil.
-- `<dialog class="lg:drawer drawer-end" id="navbarNav">`: Mengubah menu menjadi drawer di layar kecil dan menu inline mulai breakpoint `lg`.
+  - Tombol ikon menu beraksen biru yang membuka drawer navigasi pada layar kecil.
+- `<dialog class="lg:drawer drawer-end navbar-menu" id="navbarNav">`: Menampilkan panel menu drawer berwarna gelap pada layar kecil dan menu inline mulai breakpoint `lg`.
 - `<ul class="navbar-nav ms-auto lg:align-items-center gap-2">`:
   - `navbar-nav`: List item khusus navigasi.
   - `ms-auto`: Dorong seluruh item navigasi ke sisi kanan (`margin-left: auto`).
   - `lg:align-items-center`: Merapikan posisi item di tengah pada breakpoint `lg`.
   - `gap-2`: Memberikan jarak 0.5rem antar item navigasi.
+- `.navbar-menu .nav-link`: Memberi latar aksen saat link aktif, di-hover, atau mendapat fokus keyboard.
+- Pada layar kecil, list, item, dan link menu memakai lebar penuh drawer supaya tepinya rata kiri-kanan.
+- Tombol sertifikat tetap di sisi kanan navbar; label disembunyikan pada layar paling kecil agar tombol menu tetap punya ruang.
 
 ### C. Hero Section (`#home`)
 - `<section id="home" class="py-5 lg:my-4">`: Kontainer section utama hero dengan padding vertikal (`py-5`).

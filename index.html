@@ -7,9 +7,7 @@
 
   <!-- Bootstrap 6 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="min-vh-100 d-flex flex-column">
@@ -18,29 +16,34 @@
   <header>
     <nav class="navbar lg:navbar-expand border-bottom border-secondary py-3 sticky-top bg-body">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-xl text-accent" href="#">Portofolio</a>
-        
-        <button class="navbar-toggler border-accent lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <dialog class="lg:drawer drawer-end bg-body" id="navbarNav" aria-label="Navigasi utama">
-          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 lg:d-none" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
-          <ul class="navbar-nav ms-auto lg:align-items-center gap-2 my-2 lg:my-0 pt-5 lg:pt-0">
+        <a class="navbar-brand fw-bold fs-xl text-accent mb-0" href="#home">Portofolio</a>
+
+        <dialog class="lg:drawer drawer-end bg-body navbar-menu" id="navbarNav" aria-label="Navigasi utama">
+          <div class="navbar-menu-header d-flex align-items-center justify-content-between mb-4 lg:d-none">
+            <span class="fw-bold fs-lg">Menu</span>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Tutup menu"></button>
+          </div>
+          <ul class="navbar-nav ms-auto lg:align-items-center gap-2 my-0 pt-5 lg:pt-0">
             <li class="nav-item">
-              <a class="nav-link fg-body fw-medium active" href="#home">Beranda</a>
+              <a class="nav-link fg-body fw-medium rounded-3 px-3 py-2 active" href="#home">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fg-body fw-medium" href="#projects">Proyek</a>
+              <a class="nav-link fg-body fw-medium rounded-3 px-3 py-2" href="#projects">Proyek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fg-body fw-medium" href="#contact">Kontak</a>
+              <a class="nav-link fg-body fw-medium rounded-3 px-3 py-2" href="#contact">Kontak</a>
             </li>
           </ul>
         </dialog>
-        <button class="btn-outline theme-accent rounded-pill px-3 py-2 ms-2" data-bs-toggle="dialog" data-bs-target="#certificateDialog">
-          <i class="bi bi-patch-check me-1"></i> Sertifikat
-        </button>
+
+        <div class="navbar-actions d-flex align-items-center gap-2 ms-auto">
+          <button class="btn-outline theme-accent rounded-pill px-3 py-2" data-bs-toggle="dialog" data-bs-target="#certificateDialog">
+            <i class="bi bi-patch-check me-sm-1"></i><span class="d-none sm:d-inline">Sertifikat</span>
+          </button>
+          <button class="navbar-toggler navbar-menu-toggle rounded-3 p-2 lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka menu navigasi">
+            <i class="bi bi-list fs-2" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
@@ -166,7 +169,7 @@
 
                 <div class="mb-4">
                   <label for="emailInput" class="form-label fw-medium">Email</label>
-                  <input type="email" class="form-control form-control-lg bg-body fg-body border-secondary" id="emailInput" placeholder="nama@contoh.com" required aria-describedby="emailFeedback">
+                  <input type="email" class="form-control form-control-lg bg-body fg-body border-secondary" id="emailInput" placeholder="name@example.com" required aria-describedby="emailFeedback">
                   <div class="invalid-feedback" id="emailFeedback">
                     Silakan masukkan alamat email yang valid.
                   </div>
