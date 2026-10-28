@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayhan | Portofolio</title>
+
+  <!-- Bootstrap 6 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-vh-100 d-flex flex-column">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar lg:navbar-expand border-bottom border-secondary py-3 sticky-top bg-body">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-xl text-accent" href="#">Portofolio</a>
+        
+        <button class="navbar-toggler border-accent lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <dialog class="lg:drawer drawer-end bg-body" id="navbarNav" aria-label="Navigasi utama">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 lg:d-none" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
+          <ul class="navbar-nav ms-auto lg:align-items-center gap-2 my-2 lg:my-0 pt-5 lg:pt-0">
+            <li class="nav-item">
+              <a class="nav-link fg-body fw-medium active" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fg-body fw-medium" href="#projects">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fg-body fw-medium" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </dialog>
+        <button class="btn-outline theme-accent rounded-pill px-3 py-2 ms-2" data-bs-toggle="dialog" data-bs-target="#certificateDialog">
+          <i class="bi bi-patch-check me-1"></i> Sertifikat
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1">
+
+    <!-- Hero Section -->
+    <section id="home" class="py-5 lg:my-4">
+      <div class="container py-4">
+        <div class="row align-items-center gy-5">
+          <div class="lg:col-7 text-center lg:text-start">
+            <span class="badge bg-accent px-3 py-2 rounded-pill mb-3">Mahasiswa | Teknik Informatika</span>
+            <h1 class="text-5xl fw-bold mb-3">Halo, saya <span class="text-accent">Rayhan</span></h1>
+            <p class="text-lg fg-2 mb-4 lg:me-4">
+              Mahasiswa teknik informatika di universitas sulawesi barat yang sudah menerima beberapa proyek kecil di luar perkuliahan.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center lg:justify-content-start gap-3">
+              <a href="#projects" class="btn-solid theme-accent btn-lg px-4 py-2">Lihat Proyek</a>
+              <a href="#contact" class="btn-outline theme-accent btn-lg px-4 py-2">Hubungi Saya</a>
+              <button class="btn-outline theme-secondary fg-body btn-lg px-4 py-2" data-bs-toggle="dialog" data-bs-target="#certificateDialog">
+                Sertifikat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Cards Grid -->
+    <section id="projects" class="py-5 bg-1">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-3xl mb-2">Proyek <span class="text-accent">Dikerjakan</span></h2>
+          <p class="fg-2">Kumpulan proyek yang sedang/telah dikerjakan</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-12 md:col-6 lg:col-4">
+            <div class="card h-100 border border-secondary rounded-4 overflow-hidden shadow-sm">
+              <img src="img/bot.png" class="card-img-top ratio ratio-16x9 object-fit-cover" alt="Project 1 preview" style="height: 220px; object-fit: cover;">
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h5 fw-bold mb-2">Discord Bot</h3>
+                <p class="card-text fg-2 mb-4 flex-grow-1">
+                  Bot discord yang dibuat menggunakan bahasa luau + API Discordia
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-outline theme-accent me-1">Tag</span>
+                  <span class="badge theme-secondary me-1">Luau</span>
+                  <span class="badge theme-secondary">Bot</span>
+                  <span class="badge theme-secondary">Discord</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="col-12 md:col-6 lg:col-4">
+            <div class="card h-100 border border-secondary rounded-4 overflow-hidden shadow-sm">
+              <img src="img/web.png" class="card-img-top ratio ratio-16x9 object-fit-cover" alt="Project 2 preview" style="height: 220px; object-fit: cover;">
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h5 fw-bold mb-2">Web Statis</h3>
+                <p class="card-text fg-2 mb-4 flex-grow-1">
+                  Web portofolio statis sederhana menggunakan Bootstrap (Halaman ini)
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-outline theme-accent me-1">Tag</span>
+                  <span class="badge theme-secondary me-1">HTML</span>
+                  <span class="badge theme-secondary me-1">CSS</span>
+                  <span class="badge theme-secondary">JavaScript</span>
+                  <span class="badge theme-secondary">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-12 md:col-6 lg:col-4">
+            <div class="card h-100 border border-secondary rounded-4 overflow-hidden shadow-sm">
+              <img src="img/roblox.png" class="card-img-top ratio ratio-16x9 object-fit-cover" alt="Project 3 preview" style="height: 220px; object-fit: cover;">
+              <div class="card-body d-flex flex-column p-4">
+                <h3 class="card-title h5 fw-bold mb-2">Roblox Game System</h3>
+                <p class="card-text fg-2 mb-4 flex-grow-1">
+                  Berbagai sistem permainan untuk roblox seperti game currency, playerlist, dll.
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-outline theme-accent me-1">Tag</span>
+                  <span class="badge theme-secondary me-1">Roblox</span>
+                  <span class="badge theme-secondary">Luau</span>
+                  <span class="badge theme-secondary">Game</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="lg:col-8">
+            <div class="text-center mb-5">
+              <h2 class="fw-bold text-3xl mb-2">Formulir <span class="text-accent">Kontak</span></h2>
+              <p class="fg-2">Kirim pesan atau pertanyaan Anda melalui formulir di bawah ini.</p>
+            </div>
+
+            <div class="card border border-secondary rounded-4 p-4 md:p-5 shadow-sm">
+              <!-- Alert Notification -->
+              <div id="contactAlert" class="alert theme-success d-none mb-4" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i> Pesan berhasil dikirim. Terima kasih!
+              </div>
+
+              <form id="contactForm" data-bs-validate novalidate>
+                <div class="mb-4">
+                  <label for="nameInput" class="form-label fw-medium">Nama</label>
+                  <input type="text" class="form-control form-control-lg bg-body fg-body border-secondary" id="nameInput" placeholder="Masukkan nama Anda" required aria-describedby="nameFeedback">
+                  <div class="invalid-feedback" id="nameFeedback">
+                    Silakan masukkan nama Anda.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="emailInput" class="form-label fw-medium">Email</label>
+                  <input type="email" class="form-control form-control-lg bg-body fg-body border-secondary" id="emailInput" placeholder="nama@contoh.com" required aria-describedby="emailFeedback">
+                  <div class="invalid-feedback" id="emailFeedback">
+                    Silakan masukkan alamat email yang valid.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="messageInput" class="form-label fw-medium">Pesan</label>
+                  <textarea class="form-control form-control-lg bg-body fg-body border-secondary" id="messageInput" rows="4" placeholder="Tulis pesan Anda di sini" required aria-describedby="messageFeedback"></textarea>
+                  <div class="invalid-feedback" id="messageFeedback">
+                    Silakan isi pesan Anda.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-solid theme-accent btn-lg w-100 py-3">
+                  <i class="bi bi-send-fill me-2"></i> Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Certificate Dialog -->
+  <dialog class="dialog dialog-lg" id="certificateDialog" tabindex="-1" aria-labelledby="certificateDialogLabel">
+    <div class="dialog-header border-bottom border-secondary px-4 pt-4 pb-3">
+      <h2 class="dialog-title h4 fw-bold text-accent" id="certificateDialogLabel">
+        <i class="bi bi-patch-check-fill me-2"></i> Sertifikat
+      </h2>
+      <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body p-4">
+      <div class="row gy-4 align-items-center">
+        <div class="md:col-5">
+          <img src="img/sertifikat.jpg" class="img-fluid rounded-3 shadow-sm border border-secondary" alt="Certificate preview" style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+        <div class="md:col-7">
+          <h3 class="h5 fw-bold mb-2">Informatic Coding Champion </h3>
+          <p class="fg-2 mb-3">
+            Diterbitkan oleh Informatic Study Club pada tahun 2025.
+          </p>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check2-circle text-accent me-2 fs-lg"></i>
+              <span>Juara 3</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-check2-circle text-accent me-2 fs-lg"></i>
+              <span>Bahasa pemrograman java</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="dialog-footer border-top border-secondary p-3">
+      <button type="button" class="btn-outline theme-secondary fg-body px-4" data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top border-secondary text-center fg-2 mt-auto bg-body">
+    <div class="container">
+      <p class="mb-0">&copy; Pemrograman Web 2026D</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 6 JS Bundle -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

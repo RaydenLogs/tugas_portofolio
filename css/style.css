@@ -1,0 +1,31 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #050505;
+  --bs-body-color: #f8f9fa;
+  --bs-accent-base: #38bdf8;
+  --bs-accent-fg: #38bdf8;
+  --bs-accent-fg-emphasis: #7dd3fc;
+  --bs-accent-bg: #38bdf8;
+  --bs-accent-bg-subtle: color-mix(in oklch, #38bdf8 15%, var(--bs-bg-body));
+  --bs-accent-bg-muted: color-mix(in oklch, #38bdf8 25%, var(--bs-bg-body));
+  --bs-accent-border: #38bdf8;
+  --bs-accent-focus-ring: color-mix(in oklch, #38bdf8 75%, var(--bs-bg-body));
+  --bs-accent-contrast: #050505;
+}
+
+.text-accent {
+  color: #38bdf8 !important;
+}
+
+.bg-accent {
+  background-color: #38bdf8 !important;
+  color: #050505 !important;
+}
+
+.border-accent {
+  border-color: #38bdf8 !important;
+}
+
+.placeholder-box {
+  background-color: rgba(56, 189, 248, 0.08);
+  border: 2px dashed #38bdf8;
+}
